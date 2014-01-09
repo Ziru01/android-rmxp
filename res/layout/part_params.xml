@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    android:weightSum="2"
+    tools:ignore="HardcodedText" >
+
+    <LinearLayout
+        android:id="@+id/layoutLeft"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/viewParamMaxHP"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_param_height"
+            android:text="MaxHP"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/viewParamSTR"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_param_height"
+            android:text="STR"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/viewParamAGI"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_param_height"
+            android:text="AGI"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutRight"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/viewParamMaxSP"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_param_height"
+            android:text="MaxSP"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/viewParamDEX"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_param_height"
+            android:text="DEX"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/viewParamINT"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_param_height"
+            android:text="INT"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+    </LinearLayout>
+
+</LinearLayout>

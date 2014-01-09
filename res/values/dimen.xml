@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dim_layout_gap">15dp</dimen>
+    <dimen name="dim_param_height">72dp</dimen>
+    
+</resources>

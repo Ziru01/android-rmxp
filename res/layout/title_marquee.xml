@@ -1,0 +1,12 @@
+<TextView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@android:id/title" 
+	android:text="This is my new title and it is very very long"
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content"
+	android:singleLine="true" 
+	android:ellipsize="marquee"
+	android:marqueeRepeatLimit ="marquee_forever"
+	android:scrollHorizontally="true"
+	android:focusable="true"
+	android:focusableInTouchMode="true" />

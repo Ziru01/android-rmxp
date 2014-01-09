@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<Spinner
+		android:id="@+id/spinActors"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentRight="true"
+		android:layout_alignParentTop="true"/>
+
+	<ScrollView
+		android:id="@+id/scrollView1"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentRight="true"
+		android:layout_below="@+id/spinActors">
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<EditText
+				android:id="@+id/editName"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_alignParentLeft="true"
+				android:layout_alignParentRight="true"
+				android:layout_alignParentTop="true"
+				android:ems="10"
+				android:hint="@string/str_name"
+				android:inputType="text">
+
+				<requestFocus/>
+
+			</EditText>
+
+			<TextView
+				android:id="@+id/textView1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/editName"
+				android:layout_marginTop="@dimen/dim_layout_gap"
+				android:text="@string/str_class"
+				android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+			<Spinner
+				android:id="@+id/spinClass"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_alignParentLeft="true"
+				android:layout_alignParentRight="true"
+				android:layout_below="@+id/textView1"/>
+
+			<TextView
+				android:id="@+id/textView2"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/spinClass"
+				android:layout_marginTop="@dimen/dim_layout_gap"
+				android:text="@string/str_init_level"
+				android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+			<TextView
+				android:id="@+id/textView3"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignBaseline="@+id/textView2"
+				android:layout_alignParentRight="true"
+				android:layout_alignTop="@+id/textView2"
+				android:layout_below="@+id/spinClass"
+				android:text="@string/str_fine_level"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:layout_alignBottom="@id/textView2"
+				android:layout_above="@+id/layoutLevel"/>
+
+			<LinearLayout
+				android:id="@+id/layoutLevel"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentLeft="true"
+				android:layout_alignParentRight="true"
+				android:layout_below="@+id/textView2"
+				android:weightSum="2">
+
+				<EditText
+					android:id="@+id/editInitLevel"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:gravity="left"
+					android:inputType="number"/>
+
+				<EditText
+					android:id="@+id/editFinalLevel"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:gravity="right"
+					android:inputType="number"/>
+
+			</LinearLayout>
+
+			<TextView
+				android:id="@+id/textView4"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentLeft="true"
+				android:layout_below="@+id/layoutLevel"
+				android:layout_marginTop="@dimen/dim_layout_gap"
+				android:text="@string/str_exp_curve"
+				android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+			<Button
+				android:id="@+id/btnExpCurve"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_alignParentLeft="true"
+				android:layout_alignParentRight="true"
+				android:layout_below="@+id/textView4"/>
+
+			<TextView
+				android:id="@+id/textView5"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentLeft="true"
+				android:layout_below="@+id/btnExpCurve"
+				android:layout_marginTop="@dimen/dim_layout_gap"
+				android:text="@string/str_character"
+				android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+			<ImageButton
+				android:id="@+id/imgBtnCharacter"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_alignParentLeft="true"
+				android:layout_alignParentRight="true"
+				android:layout_below="@+id/textView5"
+				android:scaleType="center"
+				android:contentDescription="@string/str_character"/>
+
+			<TextView
+				android:id="@+id/textView6"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentLeft="true"
+				android:layout_below="@+id/imgBtnCharacter"
+				android:layout_marginTop="@dimen/dim_layout_gap"
+				android:text="@string/str_battler"
+				android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+			<ImageButton
+				android:id="@+id/imgBtnBattler"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_alignParentLeft="true"
+				android:layout_alignParentRight="true"
+				android:layout_below="@+id/textView6"
+				android:scaleType="center"
+				android:contentDescription="@string/str_battler"/>
+
+			<TextView
+				android:id="@+id/textView7"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/imgBtnBattler"
+				android:layout_marginTop="@dimen/dim_layout_gap"
+				android:text="@string/str_param"
+				android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+			<include
+				android:id="@+id/layoutParams"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/textView7"
+				layout="@layout/part_params"/>
+
+			<RelativeLayout
+				android:id="@+id/layoutEquip"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_alignParentBottom="true"
+				android:layout_below="@+id/layoutParams"
+				android:layout_marginTop="@dimen/dim_layout_gap"
+				android:background="@drawable/groupbox"
+				android:padding="7dp">
+
+				<TextView
+					android:id="@+id/textView9"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/str_weapon"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_above="@+id/spinWeapon"/>
+
+				<CheckBox
+					android:id="@+id/chkFixWeapon"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentRight="true"
+					android:layout_alignParentTop="true"
+					android:text="@string/str_fixed"/>
+
+				<Spinner
+					android:id="@+id/spinWeapon"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_alignParentLeft="true"
+					android:layout_alignParentRight="true"
+					android:layout_below="@+id/chkFixWeapon"/>
+
+				<TextView
+					android:id="@+id/textView10"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/str_shield"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_above="@+id/spinShield"/>
+
+				<CheckBox
+					android:id="@+id/chkFixShield"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="@dimen/dim_layout_gap"
+					android:layout_alignParentRight="true"
+					android:layout_below="@+id/spinWeapon"
+					android:text="@string/str_fixed"/>
+
+				<Spinner
+					android:id="@+id/spinShield"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_alignParentLeft="true"
+					android:layout_alignParentRight="true"
+					android:layout_below="@+id/chkFixShield"/>
+
+				<TextView
+					android:id="@+id/textView11"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/str_helmet"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_above="@+id/spinHelmet"/>
+
+				<CheckBox
+					android:id="@+id/chkFixHelmet"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="@dimen/dim_layout_gap"
+					android:layout_alignParentRight="true"
+					android:layout_below="@+id/spinShield"
+					android:text="@string/str_fixed"/>
+
+				<Spinner
+					android:id="@+id/spinHelmet"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_alignParentLeft="true"
+					android:layout_alignParentRight="true"
+					android:layout_below="@+id/chkFixHelmet"/>
+
+				<TextView
+					android:id="@+id/textView12"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/str_body_armor"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_above="@+id/spinBodyArmor"/>
+
+				<CheckBox
+					android:id="@+id/chkFixBodyArmor"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="@dimen/dim_layout_gap"
+					android:layout_alignParentRight="true"
+					android:layout_below="@+id/spinHelmet"
+					android:text="@string/str_fixed"/>
+
+				<Spinner
+					android:id="@+id/spinBodyArmor"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_alignParentLeft="true"
+					android:layout_alignParentRight="true"
+					android:layout_below="@+id/chkFixBodyArmor"/>
+
+				<TextView
+					android:id="@+id/textView13"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/str_accessory"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_above="@+id/spinAccessory"/>
+
+				<CheckBox
+					android:id="@+id/chkFixAccessory"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="@dimen/dim_layout_gap"
+					android:layout_alignParentRight="true"
+					android:layout_below="@+id/spinBodyArmor"
+					android:text="@string/str_fixed"/>
+
+				<Spinner
+					android:id="@+id/spinAccessory"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_alignParentLeft="true"
+					android:layout_alignParentRight="true"
+					android:layout_below="@+id/chkFixAccessory"/>
+
+			</RelativeLayout>
+
+			<TextView
+				android:id="@+id/textView8"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentLeft="true"
+				android:layout_below="@+id/layoutParams"
+				android:layout_marginLeft="16dp"
+				android:layout_marginTop="3dp"
+				android:text="@string/str_start_equip"
+				android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+		</RelativeLayout>
+
+	</ScrollView>
+
+</RelativeLayout>
+

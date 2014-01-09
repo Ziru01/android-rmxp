@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="HardcodedText" >
+
+	<ScrollView 
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentRight="true"
+		android:layout_above="@+id/buttons">
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<EditText
+			    android:id="@+id/editGameTitle"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_alignParentLeft="true"
+			    android:layout_alignParentRight="true"
+			    android:ems="10"
+			    android:hint="@string/str_project_name"
+			    android:inputType="text"
+			    android:singleLine="true" >
+
+				<requestFocus />
+			</EditText>
+
+			<TextView
+				android:id="@+id/labelEditDirPath"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentLeft="true"
+				android:layout_below="@+id/editGameTitle"
+				android:layout_marginTop="@dimen/dim_layout_gap"
+				android:text="@string/str_dir_path"
+				android:textAppearance="?android:attr/textAppearanceMedium" />
+
+			<Button
+				android:id="@+id/btnChooseDir"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignBottom="@+id/labelEditDirPath"
+				android:layout_alignParentRight="true"
+				android:background="@android:drawable/ic_menu_search"
+				android:padding="0dp" />
+
+			<EditText
+			    android:id="@+id/editDirPath"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignParentLeft="true"
+			    android:layout_alignParentRight="true"
+			    android:layout_below="@+id/labelEditDirPath"
+			    android:ems="10"
+			    android:inputType="text"
+			    android:singleLine="true" />
+
+			<TextView
+				android:id="@+id/labelEditRTP"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentLeft="true"
+				android:layout_below="@+id/editDirPath"
+				android:layout_marginTop="@dimen/dim_layout_gap"
+				android:text="@string/str_select_rtp"
+				android:textAppearance="?android:attr/textAppearanceMedium" />
+
+			<EditText
+			    android:id="@+id/editRTP1"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignParentLeft="true"
+			    android:layout_alignParentRight="true"
+			    android:layout_below="@+id/labelEditRTP"
+			    android:ems="10"
+			    android:inputType="text"
+			    android:singleLine="true"
+			    android:text="Standard" />
+
+			<EditText
+			    android:id="@+id/editRTP2"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignParentLeft="true"
+			    android:layout_alignParentRight="true"
+			    android:layout_below="@+id/editRTP1"
+			    android:ems="10"
+			    android:inputType="text"
+			    android:singleLine="true" />
+
+			<EditText
+			    android:id="@+id/editRTP3"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignParentLeft="true"
+			    android:layout_alignParentRight="true"
+			    android:layout_below="@+id/editRTP2"
+			    android:ems="10"
+			    android:inputType="text"
+			    android:singleLine="true" />
+
+		</RelativeLayout>
+	</ScrollView>
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="@android:drawable/bottom_bar"
+        android:weightSum="2" >
+
+        <Button
+            android:id="@android:id/button1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="@android:string/cancel" />
+
+        <Button
+            android:id="@android:id/button2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="@android:string/ok" />
+
+    </LinearLayout>
+
+</RelativeLayout>

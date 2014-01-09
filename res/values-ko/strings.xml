@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">RPG 만들기</string>
+    <string-array name="arr_main_list">
+        <item >새 프로젝트</item>
+        <item >프로젝트 열기</item>
+        <item >설정</item>
+    </string-array>
+    <string name="str_new_project">새 프로젝트</string>
+    <string name="str_new_dir">새 폴더</string>
+    <string name="str_file_icon">파일 아이콘</string>
+    <string name="str_project_name">게임 타이틀</string>
+    <string name="str_choose_dir">폴더 선택</string>
+    <string name="str_choose_file">파일 선택</string>
+    <string name="str_menu">메뉴</string>
+    <string name="str_delete">삭제</string>
+    <string name="str_rename">이름 바꾸기</string>
+    <string name="str_select">선택</string>
+    <string name="str_error_empty">대화 상자 상단의 박스에 새 파일명을 입력 후 다시 누르십시오.</string>
+    <string name="str_error_nonexist">파일 또는 폴더가 존재하지 않습니다.</string>
+    <string name="str_no_open_files"><b>열린 파일이 없습니다.</b></string>
+    <string name="str_question_delete">이 폴더는 비어 있지 않습니다.\n정말 삭제하시겠습니까?</string>
+    <string name="str_dir_path">폴더 경로</string>
+    <string name="str_select_rtp">RTP 선택</string>
+    <string name="str_ask_extract_rgssad_title">RGSSAD 파일이 탐지되었습니다</string>
+    <string name="str_ask_extract_rgssad">프로젝트를 올바르게 열기 위해서 RGSSAD 파일을 복호화하여야 합니다. 계속하시겠습니까?</string>
+    <string name="str_ask_close_page">이 페이지를 닫을까요?</string>
+    <string name="str_ask_terminate">정말로 이 작업 큐를 정지시키겠습니까?</string>
+    <string name="str_import">불러오기</string>
+    <string name="str_export">내보내기</string>
+    <string name="str_preview">미리보기</string>
+    <string name="str_name">이름</string>
+    <string name="str_class">클래스</string>
+    <string name="str_init_level">처음 레벨</string>
+    <string name="str_fine_level">끝 레벨</string>
+    <string name="str_exp_curve">경험치 곡선</string>
+    <string name="str_exp_basis">기초값</string>
+    <string name="str_exp_inflation">인플레이션</string>
+    <string name="str_character">캐릭터</string>
+    <string name="str_hue">색조</string>
+    <string name="str_battler">배틀러</string>
+    <string name="str_param">파라미터</string>
+    <string name="str_start_equip">시작 갑빠</string>
+    <string name="str_weapon">무기</string>
+    <string name="str_shield">방패</string>
+    <string name="str_helmet">헬멧</string>
+    <string name="str_body_armor">갑옷</string>
+    <string name="str_accessory">엑세서리</string>
+    <string name="str_fixed">고정</string>
+
+    <string name="menu_files">파일 열기</string>
+    <string name="menu_database">데이터베이스</string>
+    <string name="menu_materialbase">메테리얼베이스</string>
+    <string name="menu_actors">배우</string>
+    <string name="menu_maps">맵</string>
+    <string name="menu_scripts">스크립트</string>
+    
+    <string name="desc_material_spinner">메테리얼 종류 (애니메이션, 타일, 브금 등)</string>
+    <string name="desc_material_list">메테리얼 목록</string>
+    
+    <string name="task_estimating">계산 중..</string>
+    <string name="task_decompressing">압축 해제 중.. </string>
+	<string name="task_transferring">이동중..</string>
+    <string name="task_editing">수정중..</string>
+    <string name="task_complete">완료</string>
+    
+</resources>

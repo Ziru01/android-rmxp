@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="material_categories">
+        <item>Graphics/Animations</item>
+        <item>Graphics/Autotiles</item>
+        <item>Graphics/Battlebacks</item>
+        <item>Graphics/Battlers</item>
+        <item>Graphics/Characters</item>
+        <item>Graphics/Fogs</item>
+        <item>Graphics/Gameovers</item>
+        <item>Graphics/Icons</item>
+        <item>Graphics/Panoramas</item>
+        <item>Graphics/Pictures</item>
+        <item>Graphics/Tilesets</item>
+        <item>Graphics/Titles</item>
+        <item>Graphics/Transitions</item>
+        <item>Graphics/Windowskins</item>
+        <item>Audio/BGM</item>
+        <item>Audio/BGS</item>
+        <item>Audio/ME</item>
+        <item>Audio/SE</item>
+    </string-array>
+	<string-array name="material_menu">
+		<item>@string/str_export</item>
+		<item>@string/str_delete</item>
+	</string-array>
+</resources>

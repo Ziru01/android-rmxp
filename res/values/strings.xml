@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CreateRPG</string>
+    <string-array name="arr_main_list">
+        <item >New Project</item>
+        <item >Open Project</item>
+        <item >Preferences</item>
+    </string-array>
+    <string name="str_new_project">New Project</string>
+    <string name="str_new_dir">New Folder</string>
+    <string name="str_file_icon">File icon</string>
+    <string name="str_project_name">Game title</string>
+    <string name="str_choose_dir">Select folder</string>
+    <string name="str_choose_file">Select file</string>
+    <string name="str_menu">Menu</string>
+    <string name="str_delete">Delete</string>
+    <string name="str_rename">Rename</string>
+    <string name="str_select">Select</string>
+    <string name="str_error_empty">Please enter the new file name to the box in the top of the dialog and click this again.</string>
+    <string name="str_error_nonexist">No such file or directory.</string>
+    <string name="str_error_observe_removed">This file has been deleted. Keep this file in the editor?</string>
+    <string name="str_notify_edited">This file has been edited by another editor. Reload this file?</string>
+    <string name="str_no_open_files"><b>No open files</b></string>
+    <string name="str_question_delete">This directory is not empty.\nAre you sure you want to delete it?</string>
+    <string name="str_dir_path">Directory path</string>
+    <string name="str_select_rtp">Select RTP..</string>
+    <string name="str_ask_extract_rgssad_title">RGSSAD file detected!</string>
+    <string name="str_ask_extract_rgssad">To load the project properly, the encrypted RGSSAD file should be extracted into the folder. Continue?</string>
+    <string name="str_ask_close_page">Close this page?</string>
+    <string name="str_ask_terminate">Do you wish to terminate this queue?</string>
+    <string name="str_import">Import</string>
+    <string name="str_export">Export</string>
+    <string name="str_preview">Preview</string>
+    <string name="str_name">Name</string>
+    <string name="str_class">Class</string>
+    <string name="str_init_level">Initial level</string>
+    <string name="str_fine_level">Final level</string>
+    <string name="str_exp_curve">Exp curve</string>
+    <string name="str_exp_basis">Basis</string>
+    <string name="str_exp_inflation">Inflation</string>
+    <string name="str_character">Character</string>
+    <string name="str_hue">Hue</string>
+    <string name="str_battler">Battler</string>
+    <string name="str_param">Parameters</string>
+    <string name="str_start_equip">Starting Equipment</string>
+    <string name="str_weapon">Weapon</string>
+    <string name="str_shield">Shield</string>
+    <string name="str_helmet">Helmet</string>
+    <string name="str_body_armor">Body armor</string>
+    <string name="str_accessory">Accessory</string>
+    <string name="str_fixed">Fixed</string>
+
+    <string name="menu_files">Open file</string>
+    <string name="menu_database">Database</string>
+    <string name="menu_materialbase">Materialbase</string>
+    <string name="menu_actors">Actors</string>
+    <string name="menu_maps">Maps</string>
+    <string name="menu_scripts">Scripts</string>
+    
+    <string name="desc_material_spinner">Material type (Animations, Tiles, BGM and et cetera)</string>
+    <string name="desc_material_list">List of materials</string>
+    
+    <string name="task_estimating">Estimating..</string>
+    <string name="task_decompressing">Decompressing.. </string>
+	<string name="task_transferring">Transferring.. </string>
+    <string name="task_editing">Editing..</string>
+    <string name="task_complete">Complete</string>
+
+</resources>

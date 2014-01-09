@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:auto="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/menu_files" android:title="@string/menu_files" android:icon="@drawable/ic_action_view_as_list" auto:showAsAction="ifRoom">
+        <menu>
+            <item android:id="@+id/menu_database" android:title="@string/menu_database">
+                  <menu>
+                      <item android:id="@+id/menu_actors" android:title="@string/menu_actors" />
+                  </menu>
+            </item>
+            <item android:id="@+id/menu_materialbase" android:title="@string/menu_materialbase" />
+            <item android:id="@+id/menu_maps" android:title="@string/menu_maps"/>
+            <item android:id="@+id/menu_scripts" android:title="@string/menu_scripts"/>
+        </menu>
+    </item>
+    
+
+</menu>
